@@ -9,6 +9,8 @@ export const HomePage = () => {
     setCurrency(e.target.value);
   };
 
+  
+
   return (
     <div className="container">
       <h1>Kurzovní lístek</h1>
@@ -27,7 +29,7 @@ export const HomePage = () => {
             </select>
           </div>
         </form>
-        <Rate />
+        <Rate from={currency} />
       </div>
     </div>
   );
